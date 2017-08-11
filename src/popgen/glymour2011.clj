@@ -14,9 +14,9 @@
   [wa1 wa2 wb1 wb2 p1 q1 p]
   (let [q (- 1 p)
         p2 (- 1 p1)
-        q1 (- 1 q1)
-        abs-p' (* p (+ (* wa1 p1) (wa2 p2)))
-        abs-q' (* q (+ (* wa1 q1) (wa2 q2)))]
+        q2 (- 1 q1)
+        abs-p' (* p (+ (* wa1 p1) (* wa2 p2)))
+        abs-q' (* q (+ (* wa1 q1) (* wa2 q2)))]
     (/ abs-p'(+ abs-p' abs-q'))))
 
 ;; Equation 1, p. 455
